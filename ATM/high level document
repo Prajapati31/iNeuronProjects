@@ -1,0 +1,62 @@
+ATM Project
+Overview
+The ATM project is a simple command-line application that simulates an Automated Teller Machine (ATM) with basic banking functionalities such as withdrawal, deposit, transfer, and transaction history.
+
+Functional Requirements
+The ATM should be able to perform the following functions:
+
+Authenticate a user with a valid user ID and user PIN.
+Allow the user to view their transaction history.
+Allow the user to withdraw money from their account, provided they have sufficient funds.
+Allow the user to deposit money into their account.
+Allow the user to transfer money to another account, provided they have sufficient funds and the destination account exists.
+Quit the application.
+Non-Functional Requirements
+The ATM should be easy to use and navigate, with clear instructions and prompts for the user.
+The application should be secure and validate user input to prevent malicious actions or errors.
+The application should be reliable and handle errors or exceptions gracefully.
+The application should be fast and responsive, with minimal delay between user actions and feedback.
+Use Cases
+Authentication
+The user enters their user ID and user PIN.
+The application validates the user's credentials and grants access if they are correct.
+If the user enters incorrect credentials, the application denies access and prompts the user to try again or quit.
+Transaction History
+The user selects the "Show Transaction History" option.
+The application displays a list of the user's past transactions, including the date, time, type, and amount.
+The user can scroll through the transaction history or quit back to the main menu.
+Withdrawal
+The user selects the "Withdraw" option.
+The application prompts the user to enter the amount they wish to withdraw.
+The application validates that the user has sufficient funds and allows the transaction if they do.
+The application deducts the withdrawal amount from the user's account and dispenses cash if applicable.
+The application displays a confirmation message and returns to the main menu.
+Deposit
+The user selects the "Deposit" option.
+The application prompts the user to enter the amount they wish to deposit.
+The application adds the deposit amount to the user's account.
+The application displays a confirmation message and returns to the main menu.
+Transfer
+The user selects the "Transfer" option.
+The application prompts the user to enter the destination account number and the amount to transfer.
+The application validates that the user has sufficient funds and that the destination account exists.
+The application deducts the transfer amount from the user's account and adds it to the destination account.
+The application displays a confirmation message and returns to the main menu.
+Quit
+The user selects the "Quit" option.
+The application displays a confirmation message and terminates.
+System Architecture
+The ATM project is implemented in Java and consists of several classes:
+
+AccountHolder: Represents a bank account holder with a user ID and user PIN.
+Account: Represents a bank account with an account number and balance.
+BankTransaction: Provides transaction functions such as transfer and transaction history.
+Bank: Represents a bank with an account holder and an account.
+ATM: Provides user interface and functionality with a Bank instance.
+ATMProject: Main program entry point.
+Future Improvements
+The ATM project can be improved with the following features:
+
+Enhanced security measures such as biometric authentication or two-factor authentication.
+More detailed transaction history with filtering and sorting options.
+Multi-language support for international users
